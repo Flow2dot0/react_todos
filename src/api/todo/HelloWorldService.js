@@ -12,7 +12,7 @@ class HelloWorldService {
         let basicAuth = 'Basic ' + window.btoa(username + ":" + password);
         let config = {
             headers:{
-                authorization: basicAuth
+                authorization: 'Basic dXNyOnB3ZA=='
             }
         };
         axios.get(`http://localhost:8080/hello-world/path-variable/${name}`, config);
